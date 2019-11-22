@@ -49,8 +49,123 @@ describe('Log Into ShopStream', function () {
     });
 
 
+    /**
+     * After logged in, change route to the apps home dashboard.
+     * Click the main menu drawer button to test that it opens.
+     */
+    it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/dashboard");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+  
+
+
+    it('Click On Jobs Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('jobsButton')).click();
+      });
+
+
+
+    it('Click Create Jobs Button', async function() {
+        // route to Jobs Page
+        await driver.get("http://localhost:3000/jobs");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('createJob')).click();
+      });
+
+
+    /**
+     * Click the main menu drawer button to test that it opens.
+     */
+    it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/jobs/create-job");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+
+      it('Click On Jobs Button', async function() {
+        driver.findElement(By.id('jobsButton')).click();
+      });
+
+
+      it('Click View Jobs Button', async function() {
+        // route to Jobs Page
+        await driver.get("http://localhost:3000/jobs");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('viewJobs')).click();
+      });
+      
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/jobs/view-jobs");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+      it('Click On Jobs Button', async function() {
+        driver.findElement(By.id('jobsButton')).click();
+      });
+
+
+      it('Click Edit Jobs Button', async function() {
+        // route to Jobs Page
+        await driver.get("http://localhost:3000/jobs");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('editJobs')).click();
+      });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/jobs/edit-jobs");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+
+      it('Click On Inventory Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('invButton')).click();
+      });
+
+
+      it('Click On Add Material Button', async function() {
+        await driver.get("http://localhost:3000/inventory");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('addInv')).click();
+      });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/inventory/add-inventory");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+
+      it('Click On Inventory Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('invButton')).click();
+      });
+
+
+      //End Script for now.  Adding more soon.
+      it('Click On Inventory Button', async function() {
+        await driver.get("http://localhost:3000/inventory");
+      });
 
 
     // close the browser after running tests
-    // after(() => driver && driver.quit());
+    after(() => driver && driver.quit());
 })
