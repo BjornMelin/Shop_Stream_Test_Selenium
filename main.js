@@ -349,16 +349,16 @@ describe('Log Into ShopStream', function () {
       });
 
 
-      it('Click On Add Material Button', async function() {
+      it('Click On Add Shift Button', async function() {
         await driver.get("http://localhost:3000/shifts");
         // open main menu drawer on left side of dashboard
-        driver.findElement(By.id('addCust')).click();
+        driver.findElement(By.id('addShift')).click();
       });
 
 
       it('Open App Bar Drawer', async function() {
         // route to apps home dashboard
-        await driver.get("http://localhost:3000/customers/add-customer");
+        await driver.get("http://localhost:3000/shifts/add-shift");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
       });
@@ -372,15 +372,15 @@ describe('Log Into ShopStream', function () {
 
 
       // Click on the view inventory button 
-      it('Click On View Inventory Button', async function() {
-        await driver.get("http://localhost:3000/customers/list-customers");
-        driver.findElement(By.id('viewCust')).click();
+      it('Click On View Shifts Button', async function() {
+        await driver.get("http://localhost:3000/shifts");
+        driver.findElement(By.id('viewShifts')).click();
       });
 
 
       it('Open App Bar Drawer', async function() {
         // route to apps home dashboard
-        await driver.get("http://localhost:3000/customers/edit-customers");
+        await driver.get("http://localhost:3000/customers/view-shifts");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
       });
@@ -394,15 +394,15 @@ describe('Log Into ShopStream', function () {
 
 
       // Click on the view inventory button 
-      it('Click On Edit Inventory Button', async function() {
-        await driver.get("http://localhost:3000/inventory");
-        driver.findElement(By.id('updateCust')).click();
+      it('Click On Edit Shifts Button', async function() {
+        await driver.get("http://localhost:3000/shifts");
+        driver.findElement(By.id('editShifts')).click();
       });
 
 
       it('Open App Bar Drawer', async function() {
         // route to apps home dashboard
-        await driver.get("http://localhost:3000/inventory/update-inventory");
+        await driver.get("http://localhost:3000/shifts/edit-shifts");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
       });
@@ -420,7 +420,7 @@ describe('Log Into ShopStream', function () {
       });
 
 
-      it('Click On Add Material Button', async function() {
+      it('Click On Add New Part Setup Button', async function() {
         await driver.get("http://localhost:3000/part-setup");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('addPart')).click();
@@ -429,7 +429,7 @@ describe('Log Into ShopStream', function () {
 
       it('Open App Bar Drawer', async function() {
         // route to apps home dashboard
-        await driver.get("http://localhost:3000/customers/add-customer");
+        await driver.get("http://localhost:3000/part-setup/new-part-setup");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
       });
@@ -443,15 +443,15 @@ describe('Log Into ShopStream', function () {
 
 
       // Click on the view inventory button 
-      it('Click On View Inventory Button', async function() {
-        await driver.get("http://localhost:3000/customers/list-customers");
-        driver.findElement(By.id('viewCust')).click();
+      it('Click On View Part Setups Button', async function() {
+        await driver.get("http://localhost:3000/part-setup");
+        driver.findElement(By.id('viewPartSetups')).click();
       });
 
 
       it('Open App Bar Drawer', async function() {
         // route to apps home dashboard
-        await driver.get("http://localhost:3000/customers/edit-customers");
+        await driver.get("http://localhost:3000/part-setup/view-part-setups");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
       });
@@ -465,15 +465,15 @@ describe('Log Into ShopStream', function () {
 
 
       // Click on the view inventory button 
-      it('Click On Edit Inventory Button', async function() {
-        await driver.get("http://localhost:3000/inventory");
-        driver.findElement(By.id('updateCust')).click();
+      it('Click On Edit Part Setups Button', async function() {
+        await driver.get("http://localhost:3000/part-setups");
+        driver.findElement(By.id('editPartSetups')).click();
       });
 
 
       it('Open App Bar Drawer', async function() {
         // route to apps home dashboard
-        await driver.get("http://localhost:3000/inventory/update-inventory");
+        await driver.get("http://localhost:3000/part-setup/edit-part-setups");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
       });
@@ -494,13 +494,13 @@ describe('Log Into ShopStream', function () {
       it('Click On Add User Button', async function() {
         await driver.get("http://localhost:3000/user-mgt");
         // open main menu drawer on left side of dashboard
-        driver.findElement(By.id('addCust')).click();
+        driver.findElement(By.id('addUser')).click();
       });
 
 
       it('Open App Bar Drawer', async function() {
         // route to apps home dashboard
-        await driver.get("http://localhost:3000/customers/add-customer");
+        await driver.get("http://localhost:3000/user-mgt/create-user");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
       });
@@ -514,15 +514,15 @@ describe('Log Into ShopStream', function () {
 
 
       // Click on the view inventory button 
-      it('Click On View Inventory Button', async function() {
-        await driver.get("http://localhost:3000/customers/list-customers");
-        driver.findElement(By.id('viewCust')).click();
+      it('Click On View Users Button', async function() {
+        await driver.get("http://localhost:3000/user-mgt");
+        driver.findElement(By.id('viewUsers')).click();
       });
 
 
       it('Open App Bar Drawer', async function() {
         // route to apps home dashboard
-        await driver.get("http://localhost:3000/customers/edit-customers");
+        await driver.get("http://localhost:3000/user-mgt/view-users");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
       });
@@ -536,17 +536,23 @@ describe('Log Into ShopStream', function () {
 
 
       // Click on the view inventory button 
-      it('Click On Edit Inventory Button', async function() {
-        await driver.get("http://localhost:3000/inventory");
-        driver.findElement(By.id('updateCust')).click();
+      it('Click On Edit Users Button', async function() {
+        await driver.get("http://localhost:3000/user-mgt");
+        driver.findElement(By.id('editUsers')).click();
       });
 
 
       it('Open App Bar Drawer', async function() {
         // route to apps home dashboard
-        await driver.get("http://localhost:3000/inventory/update-inventory");
+        await driver.get("http://localhost:3000/user-mgt/edit-users");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+      it('Click On Main Dashboard Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('dashButton')).click();
       });
 
 
