@@ -160,10 +160,396 @@ describe('Log Into ShopStream', function () {
       });
 
 
-      //End Script for now.  Adding more soon.
-      it('Click On Inventory Button', async function() {
+      // Click on the view inventory button 
+      it('Click On View Inventory Button', async function() {
         await driver.get("http://localhost:3000/inventory");
+        driver.findElement(By.id('viewInv')).click();
       });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/inventory/view-inventory");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+
+      it('Click On Inventory Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('invButton')).click();
+      });
+
+
+      // Click on the view inventory button 
+      it('Click On Edit Inventory Button', async function() {
+        await driver.get("http://localhost:3000/inventory");
+        driver.findElement(By.id('updateInv')).click();
+      });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/inventory/update-inventory");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+      /**
+       * CUSTOMERS
+       */
+
+
+      it('Click On Customers Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('custButton')).click();
+      });
+
+
+      it('Click On Add Customer Button', async function() {
+        await driver.get("http://localhost:3000/customers");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('addCust')).click();
+      });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/customers/add-customer");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+
+      it('Click On Customer Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('custButton')).click();
+      });
+
+
+      // Click on the view inventory button 
+      it('Click On View Customers Button', async function() {
+        await driver.get("http://localhost:3000/customers");
+        driver.findElement(By.id('viewCust')).click();
+      });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/customers/list-customers");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+
+      it('Click On Customers Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('custButton')).click();
+      });
+
+
+      // Click on the view inventory button 
+      it('Click On Edit Customers Button', async function() {
+        await driver.get("http://localhost:3000/customers");
+        driver.findElement(By.id('updateCust')).click();
+      });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/inventory/edit-customers");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+
+      /**
+       * INSPECTIONS
+       */
+
+
+      it('Click On Inspections Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('inspectButton')).click();
+      });
+
+
+      it('Click On Submit Inspection Button', async function() {
+        await driver.get("http://localhost:3000/inspections");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('submitInsp')).click();
+      });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/inspections/submit-inspection");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+
+      it('Click On Inspections Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('inspectButton')).click();
+      });
+
+
+      // Click on the view inspections button 
+      it('Click On View Inspections Button', async function() {
+        await driver.get("http://localhost:3000/inspections");
+        driver.findElement(By.id('viewInsp')).click();
+      });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/inspections/view-inspections");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+
+      it('Click On Inspections Button', async function() {
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('inspectButton')).click();
+      });
+
+
+      // Click on the view inventory button 
+      it('Click On Edit Inspections Button', async function() {
+        await driver.get("http://localhost:3000/inspections");
+        driver.findElement(By.id('updateInsp')).click();
+      });
+
+
+      it('Open App Bar Drawer', async function() {
+        // route to apps home dashboard
+        await driver.get("http://localhost:3000/inspections/edit-inspections");
+        // open main menu drawer on left side of dashboard
+        driver.findElement(By.id('openMenuDrawer')).click();
+      });
+
+
+      /**
+       * SHIFTS
+       */
+
+
+      // it('Click On Customers Button', async function() {
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('inspectButton')).click();
+      // });
+
+
+      // it('Click On Add Material Button', async function() {
+      //   await driver.get("http://localhost:3000/customers");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('addCust')).click();
+      // });
+
+
+      // it('Open App Bar Drawer', async function() {
+      //   // route to apps home dashboard
+      //   await driver.get("http://localhost:3000/customers/add-customer");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('openMenuDrawer')).click();
+      // });
+
+
+
+      // it('Click On Inventory Button', async function() {
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('custButton')).click();
+      // });
+
+
+      // // Click on the view inventory button 
+      // it('Click On View Inventory Button', async function() {
+      //   await driver.get("http://localhost:3000/customers/list-customers");
+      //   driver.findElement(By.id('viewCust')).click();
+      // });
+
+
+      // it('Open App Bar Drawer', async function() {
+      //   // route to apps home dashboard
+      //   await driver.get("http://localhost:3000/customers/edit-customers");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('openMenuDrawer')).click();
+      // });
+
+
+
+      // it('Click On Inventory Button', async function() {
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('custButton')).click();
+      // });
+
+
+      // // Click on the view inventory button 
+      // it('Click On Edit Inventory Button', async function() {
+      //   await driver.get("http://localhost:3000/inventory");
+      //   driver.findElement(By.id('updateCust')).click();
+      // });
+
+
+      // it('Open App Bar Drawer', async function() {
+      //   // route to apps home dashboard
+      //   await driver.get("http://localhost:3000/inventory/update-inventory");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('openMenuDrawer')).click();
+      // });
+
+
+
+      // /**
+      //  * PART SETUP
+      //  */
+
+
+      // it('Click On Customers Button', async function() {
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('inspectButton')).click();
+      // });
+
+
+      // it('Click On Add Material Button', async function() {
+      //   await driver.get("http://localhost:3000/customers");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('addCust')).click();
+      // });
+
+
+      // it('Open App Bar Drawer', async function() {
+      //   // route to apps home dashboard
+      //   await driver.get("http://localhost:3000/customers/add-customer");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('openMenuDrawer')).click();
+      // });
+
+
+
+      // it('Click On Inventory Button', async function() {
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('custButton')).click();
+      // });
+
+
+      // // Click on the view inventory button 
+      // it('Click On View Inventory Button', async function() {
+      //   await driver.get("http://localhost:3000/customers/list-customers");
+      //   driver.findElement(By.id('viewCust')).click();
+      // });
+
+
+      // it('Open App Bar Drawer', async function() {
+      //   // route to apps home dashboard
+      //   await driver.get("http://localhost:3000/customers/edit-customers");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('openMenuDrawer')).click();
+      // });
+
+
+
+      // it('Click On Inventory Button', async function() {
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('custButton')).click();
+      // });
+
+
+      // // Click on the view inventory button 
+      // it('Click On Edit Inventory Button', async function() {
+      //   await driver.get("http://localhost:3000/inventory");
+      //   driver.findElement(By.id('updateCust')).click();
+      // });
+
+
+      // it('Open App Bar Drawer', async function() {
+      //   // route to apps home dashboard
+      //   await driver.get("http://localhost:3000/inventory/update-inventory");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('openMenuDrawer')).click();
+      // });
+
+
+
+      // /**
+      //  * USER MANAGEMENT
+      //  */
+
+
+      // it('Click On Customers Button', async function() {
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('inspectButton')).click();
+      // });
+
+
+      // it('Click On Add Material Button', async function() {
+      //   await driver.get("http://localhost:3000/customers");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('addCust')).click();
+      // });
+
+
+      // it('Open App Bar Drawer', async function() {
+      //   // route to apps home dashboard
+      //   await driver.get("http://localhost:3000/customers/add-customer");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('openMenuDrawer')).click();
+      // });
+
+
+
+      // it('Click On Inventory Button', async function() {
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('custButton')).click();
+      // });
+
+
+      // // Click on the view inventory button 
+      // it('Click On View Inventory Button', async function() {
+      //   await driver.get("http://localhost:3000/customers/list-customers");
+      //   driver.findElement(By.id('viewCust')).click();
+      // });
+
+
+      // it('Open App Bar Drawer', async function() {
+      //   // route to apps home dashboard
+      //   await driver.get("http://localhost:3000/customers/edit-customers");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('openMenuDrawer')).click();
+      // });
+
+
+
+      // it('Click On Inventory Button', async function() {
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('custButton')).click();
+      // });
+
+
+      // // Click on the view inventory button 
+      // it('Click On Edit Inventory Button', async function() {
+      //   await driver.get("http://localhost:3000/inventory");
+      //   driver.findElement(By.id('updateCust')).click();
+      // });
+
+
+      // it('Open App Bar Drawer', async function() {
+      //   // route to apps home dashboard
+      //   await driver.get("http://localhost:3000/inventory/update-inventory");
+      //   // open main menu drawer on left side of dashboard
+      //   driver.findElement(By.id('openMenuDrawer')).click();
+      // });
+
+
 
 
     // close the browser after running tests
