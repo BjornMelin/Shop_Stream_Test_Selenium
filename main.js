@@ -24,18 +24,18 @@ describe('Log Into ShopStream', function () {
     /**
      * Enter Email in Login page.
      */
-    it('Enter Email', async function() {
+    it('Enter Username', async function() {
         // enter email
-        driver.findElement(By.id('email')).sendKeys(process.env.EMAIL);
+        driver.findElement(By.id('username')).sendKeys("melinb");
     });
 
 
     /**
      * Enter Password in Login page.
      */
-    it('Enter password', async function() {
+    it('Enter Password', async function() {
         // enter password
-        driver.findElement(By.id('password')).sendKeys('Password');
+        driver.findElement(By.id('password')).sendKeys('Augsburg');
     });
 
 
@@ -75,14 +75,44 @@ describe('Log Into ShopStream', function () {
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('createJob')).click();
       });
+    
+
+    it('Add New Job To DB', async function() {
+      await driver.get("http://localhost:3000/jobs/create-job");
+      /**
+       * Fill In Form Input and Submit
+       */
+      driver.findElement(By.id('orderDate')).sendKeys("12122019");
+      driver.findElement(By.id('dueDate')).sendKeys("12122019");
+      driver.findElement(By.id('poNum')).sendKeys("test");
+      driver.findElement(By.id('jobNum')).sendKeys("test");
+      driver.findElement(By.id('partNum')).sendKeys("test");
+      driver.findElement(By.id('orderQuant')).sendKeys("test");
+      driver.findElement(By.id('recievedQuant')).sendKeys("test");
+      driver.findElement(By.id('remainingQuant')).sendKeys("test");
+      driver.findElement(By.id('cycleTime')).sendKeys("test");
+      driver.findElement(By.id('runHours')).sendKeys("test");
+      driver.findElement(By.id('runDays')).sendKeys("test");
+      driver.findElement(By.id('amountTotal')).sendKeys("test");
+      driver.findElement(By.id('amountPerHour')).sendKeys("test");
+      driver.findElement(By.id('amountPerUnit')).sendKeys("test");
+      driver.findElement(By.id('mmeNotes')).sendKeys("test");
+    });
+
+
+    it('Submit Create Job Form', async function() {
+      // submit create job form
+      driver.findElement(By.id('submitOrder')).click();
+  });
+    
 
 
     /**
      * Click the main menu drawer button to test that it opens.
      */
     it('Open App Bar Drawer', async function() {
-        // route to apps home dashboard
-        await driver.get("http://localhost:3000/jobs/create-job");
+        // // route to apps home dashboard
+        // await driver.get("http://localhost:3000/jobs/create-job");
         // open main menu drawer on left side of dashboard
         driver.findElement(By.id('openMenuDrawer')).click();
       });
