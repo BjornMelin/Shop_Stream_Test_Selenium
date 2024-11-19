@@ -1,7 +1,7 @@
 {
   "name": "temp",
-  "version": "1.0.0",
-  "description": "none",
+  "version": "1.0.1",
+  "description": "Automating Test Script For ShopStream Frontend",
   "main": "main.js",
   "scripts": {
     "test": "mocha --recursive --timeout 100000 main.js",
@@ -9,12 +9,11 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
   "dependencies": {
-    "chromedriver": "^119.0.1",
-    "dotenv": "^8.1.0",
-    "mocha": "^10.2.0",
-    "react": "^16.12.0",
+    "chromedriver": "^131.0.0",
+    "dotenv": "^16.4.5",
+    "mocha": "^10.8.2",
+    "react": "^18.3.1",
     "selenium-webdriver": "^4.26.0"
   }
 }
